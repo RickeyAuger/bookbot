@@ -32,15 +32,13 @@ def char_dict_to_sorted_list(char_count_dict):
     chars_list.sort(reverse=True, key=sort_on)
     return chars_list
 
-filepath = "./books/frankenstein.txt"
-file_contents = read_file(filepath)
-lower_list = get_characters(file_contents)
-char_count_dict = char_count(lower_list)
-char_dict_list = (char_dict_to_sorted_list(char_count_dict))
+#filepath = sys.argv[1]
+#file_contents = read_file(filepath)
+#lower_list = get_characters(file_contents)
+#char_count_dict = char_count(lower_list)
+#char_dict_list = (char_dict_to_sorted_list(char_count_dict))
 
-for item in char_dict_list:
-    if item['char'].isalpha():
-        print(f"{item['char']}: {item['count']}")
+
 
 
 

@@ -1,10 +1,16 @@
+import sys
+
+if len(sys.argv) != 2:
+    print("Usage: python3 main.py <path_to_book>")
+    sys.exit(1)
+
 from stats import read_file
 from stats import get_word_count
 from stats import get_characters
 from stats import char_count
 from stats import char_dict_to_sorted_list
 
-filepath = "books/frankenstein.txt"
+filepath = sys.argv[1]
 
 file_contents = read_file(filepath)
 
